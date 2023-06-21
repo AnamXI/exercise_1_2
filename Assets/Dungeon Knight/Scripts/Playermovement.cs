@@ -23,42 +23,47 @@ public class Playermovement : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.S))
         {
-            anim.SetTrigger("PForwardAnim");
+
+            anim.enabled = true;
+            anim.SetTrigger("PForwardAnim" );
         }
 
         if (Input.GetKeyUp(KeyCode.S))
         {
-            
+            anim.enabled = false;
         }
 
         if (Input.GetKeyDown(KeyCode.W))
         {
+            anim.enabled = true;
             anim.SetTrigger("PBackwardAnim");
         }
 
         if (Input.GetKeyUp(KeyCode.W))
         {
-
+            anim.enabled = false;
         }
 
         if (Input.GetKeyDown(KeyCode.A))
         {
+            anim.enabled = true;
             anim.SetTrigger("PLeftAnim");
         }
 
         if (Input.GetKeyUp(KeyCode.A))
         {
-
+            anim.enabled = false;
         }
 
         if (Input.GetKeyDown(KeyCode.D))
         {
+            anim.enabled = true;
             anim.SetTrigger("PRightAnim");
         }
 
         if (Input.GetKeyUp(KeyCode.D))
         {
-
+            anim.enabled = false;
         }
     }
 
